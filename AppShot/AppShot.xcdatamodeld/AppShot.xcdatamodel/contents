@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17162" systemVersion="20A4300b" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AppShot" representedClassName="AppShot" syncable="YES" codeGenerationType="class">
+        <attribute name="bgColorA" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="bgColorB" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="bgColorG" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="bgColorR" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="bgImage" attributeType="Binary"/>
+        <attribute name="deviceOffsetX" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="deviceOffsetY" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="image" attributeType="Binary"/>
+        <attribute name="mainTitle" attributeType="String" defaultValueString=""/>
+        <attribute name="mainTitleColorA" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mainTitleColorB" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mainTitleColorG" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mainTitleColorR" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mainTitleFont" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mainTitleOffsetX" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="mainTitleOffsetY" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subTitle" attributeType="String"/>
+        <attribute name="subTitleColorA" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subTitleColorB" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subTitleColorG" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subTitleColorR" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subTitleFont" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subTitleOffsetX" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="subTitleOffsetY" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES"/>
+    </entity>
+    <elements>
+        <element name="AppShot" positionX="-63" positionY="-18" width="128" height="389"/>
+    </elements>
+</model>
