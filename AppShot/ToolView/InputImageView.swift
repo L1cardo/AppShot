@@ -84,6 +84,17 @@ struct InputImageView: View {
         
     }
     
+    var deviceFrame: CGFloat {
+        switch deviceType {
+        case .iPhone:
+            return 42
+        case .iPad:
+            return 67
+        default:
+            return 146
+        }
+    }
+    
     var body: some View {
         VStack {
             Text(mainTitle)
@@ -103,9 +114,10 @@ struct InputImageView: View {
                 if image != nil {
                     Image(nsImage: image!)
                         .resizable()
-                        .scaledToFill()
-                        .frame(width: mockupWidth / 6 - 42, height: mockupHeight / 6 - 42)
+                        .scaledToFit()
+                        .frame(width: mockupWidth / 6 - deviceFrame)
                         .clipped()
+                        .scaleEffect((deviceType == .iPhone && screenSizeIndex == 1) ? 0.92 : 1)
                 } else {
                     Text("Drag and drop image file")
                         .font(.largeTitle)
@@ -116,7 +128,7 @@ struct InputImageView: View {
                 Image(devices[deviceIndex])
                     .resizable()
                     .scaledToFit()
-                    .frame(width: mockupWidth / 6, height: mockupHeight / 6)
+                    .frame(width: mockupWidth / 6)
                     .clipped()
                     .rotationEffect(.degrees((deviceType == .iPad && screenSizeIndex == 1) ? 90 : 0))
             }
